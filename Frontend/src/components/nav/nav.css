@@ -15,10 +15,18 @@ nav {
   font-size: 14px;
   color: #555;
 }
-
-.contact-info span {
-  margin-right: 20px;
+.left-side{
+  margin-left: 10rem;
 }
+.right-side{
+  
+}
+.contact-info  {
+  width: 100%;
+  display: flex;
+  gap: 200px;
+}
+
 
 .auth-links a {
   margin-left: 15px;
@@ -46,8 +54,15 @@ nav {
 .nav-links {
   list-style: none;
   display: flex;
+  gap: 200px;
+  
+  padding: 0;
+}
+.nav-links span {
+  
+  display: flex;
   gap: 20px;
-  margin: 0;
+  
   padding: 0;
 }
 
@@ -85,3 +100,4 @@ nav {
 .navbar-icons button:hover {
   color: #007bff;
 }
+
