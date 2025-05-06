@@ -1,44 +1,66 @@
 import React from 'react';
-import './nav.css'; 
+import './nav.css';
+import { FaMapMarkerAlt, FaEnvelope, FaClock, FaSearch, FaShoppingCart, FaHeart } from 'react-icons/fa';
+
 const Navbar = () => {
   return (
-    <nav>
-      <div className="navbar-top">
-        <div className="contact-info">
-          <span className='left-side'>
-
-          <span>📍 680 Olive Street Mccomb, NY</span>
-          <span >📧 cosymart@gmail.com</span>
-          </span>
-          <span className='right-side'>⏰ Open Time: 9:00 AM to 10:00 PM</span>
+    <div className="navbar">
+      {/* Left Section */}
+      <div className="nav-left-section">
+        <div className="top-bar">
+          <div className="left-info">
+            <div className="info-item">
+              <FaMapMarkerAlt className="icon" />
+              <span>680 Olive Street Mccomb, NY</span>
+            </div>
+            <div className="info-item info-item2">
+              <FaEnvelope className="icon" />
+              <span>cosymart@gmail.com</span>
+            </div>
+          </div>
         </div>
-        <div className="auth-links right-side">
-          <a  href="/login">Log In</a>
-          <a href="/register">Register Now</a>
-        </div> 
+          <div className="bottom-bar">
+            <button className="nav-button">Home+</button>
+            <button className="nav-button">Shop+</button>
+            <button className="nav-button">Collections+</button>
+          </div>
       </div>
-      <div className="navbar-main">
-       
-        <ul className="nav-links">
-          <span className='left-side'> 
 
-          <li ><a href="/">Home</a></li>
-          <li ><a href="/shop">Shop</a></li>
-          <li ><a href="/collections">Collections</a></li>
-          </span>
-          <span className='right-side'>
+      {/* Logo Section */}
+      <div className="nav-logo">
+        <h1>CosyMart</h1>
+      </div>
 
-          <li ><a href="/accessories">Accessories</a></li>
-          <li><a href="/pages">Page</a></li>
-          <li ><a href="/contact">Contact Us</a></li>
-          </span>
-        </ul>
-        <div className="navbar-icons right-side">
-          <button className="search-icon">🔍</button>
-          <button className="cart-icon">🛒</button>
+      {/* Right Section */}
+      <div className="nav-right-section">
+        <div className="top-bar">
+          <div className="center-info">
+            <FaClock className="icon" />
+            <span>Open Time - 9.00 AM to 10.00 PM</span>
+          </div>
+          <div className="right-info">
+            <button className="link-button">Log In</button>
+            <button className="link-button">Register Now</button>
+          </div>
+        </div>
+        <div className="bottom-bar">
+          <button className="nav-button">Accessories</button>
+          <button className="nav-button">Page+</button>
+          <button className="nav-button">Contact US</button>
+          <div className="icons">
+            <FaSearch className="icon" />
+            <div className="icon-badge">
+              <FaShoppingCart />
+              <span className="badge">03</span>
+            </div>
+            <div className="icon-badge heart">
+              <FaHeart />
+              <span className="badge">05</span>
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
+    </div>
   );
 };
 
