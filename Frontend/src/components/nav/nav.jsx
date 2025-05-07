@@ -1,7 +1,7 @@
 import React from 'react';
 import './nav.css';
 import { FaMapMarkerAlt, FaEnvelope, FaClock, FaSearch, FaShoppingCart, FaHeart } from 'react-icons/fa';
-
+import { NavLink } from 'react-router-dom';
 const Navbar = () => {
   return (
     <div className="navbar">
@@ -20,9 +20,25 @@ const Navbar = () => {
           </div>
         </div>
           <div className="bottom-bar">
-            <button className="nav-button">Home+</button>
-            <button className="nav-button">Shop+</button>
-            <button className="nav-button">Collections+</button>
+          <NavLink 
+                to="/" 
+                className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+            >
+                Home+
+            </NavLink>
+          <NavLink 
+                to="/shop" 
+                className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+            >
+                Shop+
+            </NavLink>
+          <NavLink 
+                to="/collections" 
+                className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+            >
+               Collections
+            </NavLink>
+            
           </div>
       </div>
 
@@ -40,13 +56,29 @@ const Navbar = () => {
           </div>
           <div className="right-info">
             <button className="link-button">Log In</button>
-            <button className="link-button">Register Now</button>
+            <button className="link-button reg-button">Register Now</button>
           </div>
         </div>
         <div className="bottom-bar">
-          <button className="nav-button">Accessories</button>
-          <button className="nav-button">Page+</button>
-          <button className="nav-button">Contact US</button>
+        <NavLink 
+                to="/accessories" 
+                className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+            >
+                Accessories+
+            </NavLink>
+        <NavLink 
+                to="/page" 
+                className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+            >
+                Page+
+            </NavLink>
+        <NavLink 
+                to="/contactus" 
+                className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+            >
+                Contact US
+            </NavLink>
+        
           <div className="icons">
             <FaSearch className="icon" />
             <div className="icon-badge">
