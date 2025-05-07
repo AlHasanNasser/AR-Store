@@ -1,0 +1,154 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9fafb;
+    margin: 0;
+  }
+  
+  .container {
+    display: flex;
+    padding: 20px;
+  }
+  
+  .sidebar {
+    background: white;
+    width: 250px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+  }
+  
+  .sidebar-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .category-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .category-list li {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  .category-list li:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .category-list .active {
+    background-color: #111827;
+    color: white;
+  }
+  
+  .main-content {
+    flex: 1;
+    margin-left: 20px;
+  }
+  
+  .banner {
+    background: #111827;
+    border-radius: 16px;
+    color: white;
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .banner-text h1 {
+    font-size: 32px;
+    margin: 10px 0;
+  }
+  
+  .banner-desc {
+    font-size: 14px;
+    margin: 10px 0 20px;
+  }
+  
+  .shop-now-btn {
+    background: #fbbf24;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .shop-now-btn.small {
+    padding: 6px 14px;
+    font-size: 14px;
+  }
+  
+  .banner-img img {
+    width: 180px;
+  }
+  
+  .promo {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+  }
+  
+  .promo-left {
+    background: #fff7ed;
+    border-radius: 16px;
+    flex: 1;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .special-offer {
+    font-size: 14px;
+    color: #fb923c;
+  }
+  
+  .promo-left h2 {
+    font-size: 22px;
+    margin: 8px 0;
+  }
+  
+  .discount-badge {
+    background: #f97316;
+    color: white;
+    font-size: 12px;
+    padding: 6px 10px;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+  }
+  
+  .features {
+    display: flex;
+    flex: 2;
+    gap: 20px;
+  }
+  
+  .feature {
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    flex: 1;
+  }
+  
+  .feature img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .feature h4 {
+    font-size: 16px;
+    margin: 10px 0 5px;
+  }
+  
+  .feature p {
+    font-size: 12px;
+    color: #6b7280;
+  }
+  
